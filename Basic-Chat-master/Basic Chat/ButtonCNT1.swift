@@ -40,21 +40,9 @@ class ButtonCNT1: UIViewController, CBPeripheralManagerDelegate, UITextViewDeleg
         sliderValue.text = "\(value)"
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"Back", style:.plain, target:nil, action:nil)
+
         self.baseTextView.delegate = self
         self.inputTextField.delegate = self
         //Base text view setup
@@ -120,16 +108,9 @@ class ButtonCNT1: UIViewController, CBPeripheralManagerDelegate, UITextViewDeleg
         let myAttributes1 = [NSFontAttributeName: myFont!, NSForegroundColorAttributeName: UIColor.blue]
         
         //Lets send slider value in the place of 0x44
-        
-        
-        
-        
-        
-        
         let bytes : [UInt8] = [ 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77 ]
         
         //simply put sval in the byte position you want to send
-       
         
         let Transmitdata = NSData(bytes: bytes, length: bytes.count)
         
@@ -184,10 +165,7 @@ class ButtonCNT1: UIViewController, CBPeripheralManagerDelegate, UITextViewDeleg
         }
         
     }
-    
-    
-    
-    
+
     // Write functions
     func writeValue(data: String){
         let valueString = (data as NSString).data(using: String.Encoding.utf8.rawValue)

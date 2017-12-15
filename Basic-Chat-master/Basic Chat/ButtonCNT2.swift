@@ -46,7 +46,6 @@ class ButtonCNT2: UIViewController, CBPeripheralManagerDelegate, UITextViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"Back", style:.plain, target:nil, action:nil)
         self.baseTextView.delegate = self
         self.inputTextField.delegate = self
         //Base text view setup

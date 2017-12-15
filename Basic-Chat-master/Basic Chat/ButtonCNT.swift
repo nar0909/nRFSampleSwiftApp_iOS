@@ -32,8 +32,7 @@ class ButtonCNT: UIViewController, CBPeripheralManagerDelegate, UITextViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"Back", style:.plain, target:nil, action:nil)
+
         self.baseTextView.delegate = self
         self.inputTextField.delegate = self
         //Base text view setup
@@ -53,8 +52,6 @@ class ButtonCNT: UIViewController, CBPeripheralManagerDelegate, UITextViewDelega
     
     override func viewDidAppear(_ animated: Bool) {
         self.baseTextView.text = ""
-        
-        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
