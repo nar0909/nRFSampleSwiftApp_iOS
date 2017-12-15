@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Sample App for BLE-UART Development." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcA-rG-gIg">
+                                <rect key="frame" x="16" y="209" width="288" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nRFSampleSwiftApp_iOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hn8-sU-4wK">
+                                <rect key="frame" x="21" y="20" width="279" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WcA-rG-gIg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="69d-j1-s2O"/>
+                            <constraint firstItem="Hn8-sU-4wK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="5" id="BKz-GI-ua5"/>
+                            <constraint firstItem="Hn8-sU-4wK" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="MQc-2S-rwz"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Hn8-sU-4wK" secondAttribute="bottom" constant="523" id="O5k-ca-S1L"/>
+                            <constraint firstItem="Hn8-sU-4wK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PMg-qM-nKj"/>
+                            <constraint firstItem="WcA-rG-gIg" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fiC-Bb-yOP"/>
+                            <constraint firstItem="WcA-rG-gIg" firstAttribute="centerX" secondItem="Hn8-sU-4wK" secondAttribute="centerX" id="neB-ae-gVz"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="WcA-rG-gIg" secondAttribute="bottom" constant="209" id="qj1-Hq-xkl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.625" y="373.94366197183098"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+</document>
